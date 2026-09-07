@@ -141,7 +141,7 @@ img{max-width:100%;height:auto}
 .faq-list details[open] summary:after{transform:rotate(45deg)}
 .faq-list summary span,.faq-answer>span{color:var(--gold);font:italic 16px/1.8 var(--serif)}
 .faq-answer{display:grid;grid-template-columns:32px 1fr;gap:18px;padding:0 48px 30px 4px;color:#aaa9a2;font-size:13px;line-height:2.15}
-.faq-answer p{margin:0}
+.faq-answer p{grid-column:2;margin:0}
 .faq-answer p+p{margin-top:15px}
 .faq-answer a{color:var(--paper);border-bottom:1px solid var(--gold)}
 .faq-list summary:focus-visible{outline:1px solid var(--gold);outline-offset:-2px}
