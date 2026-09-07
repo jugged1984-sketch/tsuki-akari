@@ -76,3 +76,23 @@ img{max-width:100%;height:auto}
   .floating-reserve__text{font-size:13px}
   .site-footer{padding-bottom:calc(105px + env(safe-area-inset-bottom))}
 }
+
+/* Menu page */
+.global-nav .is-current{color:var(--gold)}
+.menu-hero{min-height:clamp(420px,60svh,620px);display:grid;place-items:center;padding:130px 24px 80px;text-align:center;background:radial-gradient(circle at 50% 30%,#25241e 0,transparent 35%),#10110f;border-bottom:1px solid var(--line)}
+.menu-hero h1{margin:0;font:400 clamp(68px,11vw,140px)/1 var(--serif);letter-spacing:.14em;text-indent:.14em}
+.menu-hero p{margin:30px 0 0;color:var(--muted);font:13px/1.9 var(--serif);letter-spacing:.2em}
+.menu-content{width:min(100%,960px);margin-inline:auto;padding:clamp(90px,11vw,150px) clamp(24px,6vw,70px) clamp(110px,13vw,180px)}
+.menu-intro{max-width:700px;margin:0 auto clamp(90px,11vw,140px);text-align:center;color:#c4c0b7;font-size:14px;line-height:2.3}
+.menu-list{width:min(100%,760px);margin-inline:auto}
+.menu-category{margin-bottom:clamp(68px,8vw,96px)}
+.menu-category h2{margin:0 0 26px;color:var(--gold);font:400 21px/1.2 var(--serif);letter-spacing:.22em}
+.menu-category dl{margin:0}
+.menu-category dl div{display:grid;grid-template-columns:minmax(0,auto) minmax(24px,1fr) auto;align-items:baseline;gap:14px;padding:13px 0}
+.menu-category dl div:after{content:"";grid-column:2;grid-row:1;border-bottom:1px dotted rgba(233,229,220,.28);transform:translateY(-.3em)}
+.menu-category dt{grid-column:1;min-width:0;font-size:15px;letter-spacing:.1em;overflow-wrap:anywhere}
+.menu-category dd{grid-column:3;margin:0;text-align:right;white-space:nowrap;font:18px/1.5 var(--serif);letter-spacing:.05em}
+.menu-category__note{margin:8px 0 0;color:var(--muted);font-size:11px;letter-spacing:.08em}
+.menu-notes{width:min(100%,760px);margin:clamp(80px,10vw,120px) auto 0;padding:28px 0 0;border-top:1px solid var(--line);list-style:none;color:#85857e;font-size:11px;line-height:2}
+.menu-notes li:before{content:"・"}
+@media(max-width:520px){.menu-hero{min-height:390px;padding-top:105px}.menu-hero h1{font-size:58px}.menu-content{padding-inline:22px}.menu-intro{text-align:left}.menu-intro br{display:none}.menu-category dl div{gap:9px}.menu-category dt{font-size:13px;letter-spacing:.05em}.menu-category dd{font-size:16px}.menu-category h2{font-size:19px}}
