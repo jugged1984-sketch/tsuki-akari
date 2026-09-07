@@ -53,7 +53,7 @@ img{max-width:100%;height:auto}
 .instagram .section-label{margin-bottom:clamp(44px,5vw,70px)}
 .instagram .section-intro{max-width:1080px;margin:0 auto clamp(38px,4.5vw,64px)}
 .instagram .section-intro h2{font-family:var(--serif);font-size:clamp(38px,4vw,58px);letter-spacing:.055em}
-.instagram-feed{width:100%;max-width:1080px;min-width:0;margin-inline:auto;overflow:hidden}
+.instagram-feed{width:100%;max-width:1080px;min-width:0;margin-inline:auto;padding-bottom:clamp(32px,3.5vw,48px);overflow:hidden}
 
 /* Persistent booking action */
 .floating-reserve{position:fixed;z-index:1000;right:clamp(18px,2.5vw,38px);bottom:clamp(18px,2.5vw,34px);display:grid;grid-template-columns:1fr auto;grid-template-rows:auto auto;column-gap:24px;align-items:center;width:240px;min-height:68px;padding:11px 18px 11px 20px;border:1px solid rgba(175,149,100,.86);background:rgba(16,17,15,.94);color:var(--paper);box-shadow:0 10px 35px rgba(0,0,0,.32);backdrop-filter:blur(12px);transition:background-color .3s,border-color .3s,transform .3s}
@@ -70,7 +70,7 @@ img{max-width:100%;height:auto}
   .instagram .section-label{margin-bottom:38px}
   .instagram .section-intro{margin-bottom:32px}
   .instagram .section-intro h2{font-size:36px}
-  .instagram-feed{width:calc(100% + 4px);margin-left:-2px}
+  .instagram-feed{width:calc(100% + 4px);margin-left:-2px;padding-bottom:28px}
   .floating-reserve{right:12px;bottom:calc(12px + env(safe-area-inset-bottom));left:12px;width:auto;min-height:58px;padding:8px 16px 8px 18px;column-gap:18px}
   .floating-reserve__label{font-size:8px}
   .floating-reserve__text{font-size:13px}
