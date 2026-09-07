@@ -55,6 +55,22 @@ img{max-width:100%;height:auto}
 .instagram .section-intro h2{font-family:var(--serif);font-size:clamp(38px,4vw,58px);letter-spacing:.055em}
 .instagram-feed{width:100%;max-width:1080px;min-width:0;margin-inline:auto;padding-bottom:clamp(32px,3.5vw,48px);overflow:hidden}
 
+/* Guest information: a quiet note on sharing the intimate space. */
+.guest-information{background:var(--paper);color:var(--ink);overflow:hidden}
+.guest-information:before{content:"Information";position:absolute;top:clamp(90px,10vw,145px);right:-.04em;color:rgba(16,17,15,.035);font:400 clamp(90px,17vw,250px)/1 var(--serif);letter-spacing:-.04em;pointer-events:none}
+.guest-information .section-label{position:relative;color:#77776f}
+.guest-information__heading{position:relative;width:min(100%,930px);margin:0 auto clamp(70px,8vw,115px)}
+.guest-information__heading h2{font-size:clamp(38px,5vw,66px)}
+.guest-information__lead{max-width:760px;margin:clamp(35px,4vw,54px) 0 0 auto;color:#55564f;font-size:14px;line-height:2.35}
+.etiquette-list{width:min(100%,980px);margin-inline:auto;border-top:1px solid rgba(16,17,15,.17)}
+.etiquette-item{display:grid;grid-template-columns:72px minmax(0,1fr);gap:clamp(22px,4vw,58px);padding:clamp(32px,4vw,48px) clamp(4px,2vw,24px);border-bottom:1px solid rgba(16,17,15,.14)}
+.etiquette-item__number{margin:0;color:#9a8156;font:italic 16px/1.7 var(--serif);letter-spacing:.08em}
+.etiquette-item h3{margin:0 0 13px;font-size:16px;font-weight:400;letter-spacing:.14em}
+.etiquette-item p:not(.etiquette-item__number){max-width:720px;margin:0;color:#62635d;font-size:13px;line-height:2.15}
+.guest-information__closing{width:min(100%,800px);margin:clamp(70px,8vw,110px) auto 0;text-align:center}
+.guest-information__closing span{display:block;width:1px;height:55px;margin:0 auto 34px;background:linear-gradient(transparent,#a88e60)}
+.guest-information__closing p{margin:0;font-size:14px;line-height:2.4;letter-spacing:.1em}
+
 /* Persistent booking action */
 .floating-reserve{position:fixed;z-index:1000;right:clamp(18px,2.5vw,38px);bottom:clamp(18px,2.5vw,34px);display:grid;grid-template-columns:1fr auto;grid-template-rows:auto auto;column-gap:24px;align-items:center;width:240px;min-height:68px;padding:11px 18px 11px 20px;border:1px solid rgba(175,149,100,.86);background:rgba(16,17,15,.94);color:var(--paper);box-shadow:0 10px 35px rgba(0,0,0,.32);backdrop-filter:blur(12px);transition:background-color .3s,border-color .3s,transform .3s}
 .floating-reserve__label{font:9px/1.2 var(--serif);letter-spacing:.24em;text-transform:uppercase;color:var(--gold)}
@@ -75,6 +91,18 @@ img{max-width:100%;height:auto}
   .floating-reserve__label{font-size:8px}
   .floating-reserve__text{font-size:13px}
   .site-footer{padding-bottom:calc(105px + env(safe-area-inset-bottom))}
+  .guest-information:before{top:105px;font-size:26vw}
+  .guest-information__heading{margin-bottom:62px}
+  .guest-information__heading h2{font-size:34px;letter-spacing:.06em}
+  .guest-information__lead{font-size:13px;line-height:2.2}
+  .guest-information__lead br{display:none}
+  .etiquette-item{grid-template-columns:34px 1fr;gap:14px;padding:30px 0}
+  .etiquette-item h3{font-size:14px;line-height:1.8;letter-spacing:.1em}
+  .etiquette-item p:not(.etiquette-item__number){font-size:12px;line-height:2.1}
+  .guest-information__closing{margin-top:65px;text-align:left}
+  .guest-information__closing span{margin-left:0;height:42px}
+  .guest-information__closing p{font-size:13px;line-height:2.3}
+  .guest-information__closing br{display:none}
 }
 
 /* Menu page */
