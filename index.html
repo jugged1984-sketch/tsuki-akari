@@ -20,7 +20,7 @@
   <meta name="twitter:description" content="静寂と知性に灯る、大人の隠れ家。">
   <meta name="twitter:image" content="https://tsuki-akari.tokyo/assets/カウンター.jpeg">
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="styles.css?v=20260907-4">
+  <link rel="stylesheet" href="styles.css?v=20260910-2">
   <script src="script.js" defer></script>
 </head>
 <body>
@@ -30,7 +30,7 @@
     <span class="floating-reserve__text">一休.comで予約</span>
     <span class="floating-reserve__arrow" aria-hidden="true">↗</span>
   </a>
-  <header class="site-header" data-header>
+  <header class="site-header site-header--home" data-header>
     <a class="wordmark" href="#top" aria-label="Winebar Tsuki-akari ホーム">
       <span>Winebar</span> Tsuki-akari
     </a>
@@ -38,7 +38,12 @@
       <span class="sr-only">メニューを開く</span><i></i><i></i>
     </button>
     <nav id="global-nav" class="global-nav" aria-label="メインナビゲーション">
-      <a href="#concept">Concept</a><a href="#wine">Wine &amp; Food</a><a href="#sommelier">Sommelier</a><a href="#instagram">Instagram</a><a href="#guest-information">Information</a>
+      <a href="#concept">Concept</a>
+      <a class="nav-destination" href="menu/">Menu<span>メニュー</span></a>
+      <a href="#sommelier">Sommelier</a>
+      <a href="#instagram">Instagram</a>
+      <a class="nav-destination" href="#information">Access<span>店舗情報</span></a>
+      <a class="nav-destination" href="#guest-information">Information<span>ご利用案内</span></a>
       <a class="nav-reserve" href="#reservation">Reservation</a>
     </nav>
   </header>
@@ -62,93 +67,59 @@
         <h2 id="concept-title">グラスの向こうに、<br>静かな余韻を。</h2>
         <div class="body-copy">
           <p>ワイン、料理、人、音楽、そして空間。<br>それぞれが主張しすぎることなく、静かにつながる場所。</p>
-          <p>Tsuki-akariは、一杯の味わいと会話の間に生まれる余白まで、大切にしています。</p>
+          <p>湯島の小さなワインバー、Tsuki-akari。<br>一杯の味わいと会話の間に生まれる余白まで、大切にしています。</p>
         </div>
       </div>
       <figure class="concept-image reveal">
-        <img src="assets/イメージ.jpeg" alt="月とうさぎの意匠が灯る、静かなカウンター席" loading="lazy">
+        <img src="assets/concept-1080.webp" srcset="assets/concept-1080.webp 1080w, assets/concept-1920.webp 1920w" sizes="(max-width: 520px) calc(100vw - 44px), (max-width: 820px) 84vw, 960px" alt="月とうさぎの意匠が灯る、静かなカウンター席" loading="lazy">
         <figcaption><span>Interior</span> 静けさを設えた空間</figcaption>
       </figure>
       <div class="concept-orbit" aria-hidden="true"><span>Tsuki-akari</span></div>
     </section>
 
-    <section class="section philosophy editorial-section" id="philosophy" aria-labelledby="philosophy-title">
-      <div class="section-label reveal"><span>I</span> Our Philosophy</div>
-      <div class="editorial-heading reveal">
-        <p class="eyebrow">Our Philosophy</p>
-        <h2 id="philosophy-title">一杯のワイン、<br>その時間まで。</h2>
-      </div>
-      <div class="editorial-copy philosophy-copy reveal">
-        <p class="editorial-lead">ワインは、知識だけで楽しむものではありません。</p>
-        <p>その日の気分、<br>誰と過ごすか、<br>どんな時間を求めているか。</p>
-        <p>Tsuki-akariでは、<br>一人ひとりのお客様に寄り添いながら、<br>その夜にふさわしい一杯をご提案します。</p>
-        <p>湯島の小さな空間で、<br>ワインとともに流れる静かな時間をお楽しみください。</p>
-      </div>
-    </section>
-
-    <section class="section experience" id="experience" aria-labelledby="experience-title">
-      <div class="section-label reveal"><span>02</span> Experience</div>
-      <div class="section-intro reveal">
-        <p class="eyebrow">Time, slowly unfolding</p>
-        <h2 id="experience-title">夜を、急がない。</h2>
-      </div>
-      <div class="experience-grid">
-        <article class="experience-card reveal"><span>Silence</span><h3>静けさに身を置く</h3><p>街の喧騒から少し離れ、思考と感覚をほどく時間を。</p></article>
-        <article class="experience-card reveal"><span>Conversation</span><h3>会話を味わう</h3><p>グラスを傾けながら、言葉と沈黙が心地よく行き交う。</p></article>
-        <article class="experience-card reveal"><span>Wine</span><h3>一杯と出会う</h3><p>今夜の気分や物語に寄り添うワインをご提案します。</p></article>
-      </div>
-    </section>
-
     <section class="section wine" id="wine" aria-labelledby="wine-title">
-      <div class="section-label reveal"><span>03</span> Wine &amp; Food</div>
+      <div class="section-label reveal"><span>02</span> Wine &amp; Food</div>
       <div class="wine-layout">
-        <figure class="wine-visual reveal"><img src="assets/コース１.jpeg" alt="ワインと季節の料理のペアリング" loading="lazy"><figcaption>Wine &amp; Food</figcaption></figure>
+        <figure class="wine-visual reveal"><img src="assets/wine-food-1280.webp" srcset="assets/wine-food-1280.webp 1280w, assets/wine-food-2000.webp 2000w" sizes="(max-width: 440px) 161.25vw, (max-width: 520px) 712.5px, 975px" alt="ワインと季節の料理のペアリング" loading="lazy"><figcaption>Wine &amp; Food</figcaption></figure>
         <div class="wine-copy reveal">
           <p class="eyebrow">Curated for the moment</p>
           <h2 id="wine-title">季節と感性を、<br>ひとつのグラスに。</h2>
-          <p>ソムリエが選ぶワインをグラスから。季節の食材を生かした料理とともに、香り、温度、時間の移ろいまで愉しむペアリングをご案内します。</p>
+          <p>産地や知名度だけにとらわれず、造り手の哲学や個性を感じるワインを。<br>季節の食材を生かした料理とともに、香りや味わいの重なりをお楽しみください。</p>
+          <p>日々変わるラインナップの中から、新しいワインとの出会いを。<br>ボトルワインもご用意しております。</p>
           <ul class="wine-points">
-            <li><span>01</span> Sommelier Selection</li><li><span>02</span> By the Glass</li><li><span>03</span> Seasonal Pairing</li>
+            <li><span>01</span> Selection</li><li><span>02</span> By the Glass</li><li><span>03</span> Pairing</li>
           </ul>
-          <a class="text-link muted-link" href="menu/">メニューを見る <span aria-hidden="true">→</span></a>
+          <div class="wine-pricing">
+            <dl>
+              <div><dt>チャージ（お1人様）</dt><dd>1,650円</dd></div>
+              <div><dt>グラスワイン</dt><dd>1,430円〜</dd></div>
+            </dl>
+            <p>チャージにはウェルカムドリンクとおつまみが含まれます。<br>表示価格は税込です。</p>
+          </div>
+          <a class="text-link muted-link" href="menu/">詳しいメニュー・料金を見る <span aria-hidden="true">→</span></a>
         </div>
       </div>
     </section>
 
     <section class="section first-visit editorial-section editorial-section--light" id="first-visit" aria-labelledby="first-visit-title">
-      <div class="section-label reveal"><span>II</span> First Visit</div>
+      <div class="section-label reveal"><span>03</span> First Visit</div>
       <div class="editorial-heading reveal">
         <p class="eyebrow">First Visit</p>
         <h2 id="first-visit-title">初めてのお客様へ</h2>
       </div>
       <div class="editorial-copy reveal">
         <p class="editorial-lead">ワインに詳しくなくても、<br>どうぞ気兼ねなくお越しください。</p>
-        <p class="spoken-words">「軽やかなものを」<br>「今日は少し特別な一本を」<br><span>そんな言葉だけでも十分です。</span></p>
-        <p>お好みやその日の気分、ご予算を伺いながら、<br>ソムリエがお客様に合ったワインをご提案いたします。</p>
-        <p>お一人でのご来店も歓迎しております。</p>
-        <p>カウンターで一杯から、<br>ゆっくりとワインを楽しむ夜まで。</p>
-        <p>それぞれの時間をお楽しみください。</p>
-      </div>
-    </section>
-
-    <section class="section wine-selection editorial-section" id="wine-selection" aria-labelledby="wine-selection-title">
-      <div class="section-label reveal"><span>III</span> Wine Selection</div>
-      <div class="editorial-heading reveal">
-        <p class="eyebrow">Wine Selection</p>
-        <h2 id="wine-selection-title">その夜のための<br>一杯を。</h2>
-      </div>
-      <div class="editorial-copy reveal">
-        <p class="editorial-lead">グラスを傾けた瞬間に、<br>そのワインの背景まで感じられるような一本を。</p>
-        <p>Tsuki-akariでは、<br>産地や知名度だけにとらわれず、<br>造り手の哲学や個性を感じるワインをセレクトしています。</p>
-        <p>グラスワインからボトルワインまで、<br>その日のラインナップの中から、<br>お客様のお好みや気分に合わせてご提案いたします。</p>
-        <p>新しいワインとの出会いを、<br>どうぞお楽しみください。</p>
+        <p class="spoken-words">「軽やかなものを」<br>「今日は少し特別な一本を」</p>
+        <p>お好みやご予算を伺いながら、<br>ソムリエがご提案いたします。<br>その日の気分も、どうぞお聞かせください。</p>
+        <p>お一人でも、カウンターで一杯からお楽しみいただけます。</p>
+        <p>ご友人との語らいや、お一人で過ごす夜にも。<br>どうぞ気兼ねなくお立ち寄りください。</p>
       </div>
     </section>
 
     <section class="section sommelier" id="sommelier" aria-labelledby="sommelier-title">
       <div class="section-label reveal"><span>04</span> Sommelier</div>
       <div class="sommelier-layout">
-        <figure class="portrait-placeholder reveal"><img src="assets/ワインイメージ.jpeg" alt="グラスへ赤ワインを注ぐソムリエ" loading="lazy"><figcaption>Sommelier’s service</figcaption></figure>
+        <figure class="portrait-placeholder reveal"><img src="assets/sommelier-1280.webp" srcset="assets/sommelier-1280.webp 1280w, assets/sommelier-2000.webp 2000w" sizes="(max-width: 440px) 161.25vw, (max-width: 520px) 712.5px, (max-width: 666px) 135vw, (max-width: 820px) 900px, 975px" alt="グラスへ赤ワインを注ぐソムリエ" loading="lazy"><figcaption>Sommelier’s service</figcaption></figure>
         <div class="sommelier-copy reveal">
           <p class="eyebrow">Shaping an evening</p>
           <h2 id="sommelier-title">山崎 翔 <small>Sho Yamazaki</small></h2>
@@ -164,9 +135,9 @@
       <div class="section-label reveal"><span>05</span> Gallery</div>
       <div class="section-intro reveal"><p class="eyebrow">Scenes from <span class="brand-name">Tsuki-akari</span></p><h2 id="gallery-title">月灯りの情景。</h2></div>
       <div class="gallery-grid">
-        <figure class="gallery-item gallery-item--large reveal"><img src="assets/テーブル席.jpeg" alt="柔らかな灯りに照らされたテーブル席" loading="lazy"><figcaption><span>01 / Space</span>静かに夜が深まる空間</figcaption></figure>
-        <figure class="gallery-item reveal"><img src="assets/ワイン.jpeg" alt="カウンターに並ぶ厳選されたワインとグラス" loading="lazy"><figcaption><span>02 / Selection</span>今夜を映す一杯</figcaption></figure>
-        <figure class="gallery-item reveal"><img src="assets/コース２.jpeg" alt="複数の料理と赤・白・スパークリングワイン" loading="lazy"><figcaption><span>03 / Pairing</span>季節を重ねる料理</figcaption></figure>
+        <figure class="gallery-item gallery-item--large reveal"><img src="assets/gallery-space-800.webp" srcset="assets/gallery-space-800.webp 800w, assets/gallery-space-1200.webp 1200w" sizes="(max-width: 520px) calc(100vw - 44px), (max-width: 820px) 42vw, (max-width: 1476px) 28vw, 414px" alt="柔らかな灯りに照らされたテーブル席" loading="lazy"><figcaption><span>01 / Space</span>静かに夜が深まる空間</figcaption></figure>
+        <figure class="gallery-item reveal"><img src="assets/gallery-wine-800.webp" srcset="assets/gallery-wine-800.webp 800w, assets/gallery-wine-1200.webp 1200w" sizes="(max-width: 520px) calc(100vw - 44px), (max-width: 820px) 42vw, (max-width: 1476px) 28vw, 414px" alt="カウンターに並ぶ厳選されたワインとグラス" loading="lazy"><figcaption><span>02 / Selection</span>今夜を映す一杯</figcaption></figure>
+        <figure class="gallery-item reveal"><img src="assets/gallery-pairing-800.webp" srcset="assets/gallery-pairing-800.webp 800w, assets/gallery-pairing-1200.webp 1200w" sizes="(max-width: 520px) calc(100vw - 44px), (max-width: 820px) 42vw, (max-width: 1476px) 28vw, 414px" alt="複数の料理と赤・白・スパークリングワイン" loading="lazy"><figcaption><span>03 / Pairing</span>季節を重ねる料理</figcaption></figure>
       </div>
     </section>
 
@@ -180,28 +151,28 @@
     </section>
 
     <section class="section faq" id="faq" aria-labelledby="faq-title">
-      <div class="section-label reveal"><span>IV</span> FAQ</div>
+      <div class="section-label reveal"><span>07</span> FAQ</div>
       <div class="faq-layout">
         <div class="faq-heading reveal">
           <p class="eyebrow">Before your visit</p>
           <h2 id="faq-title"><span>FAQ</span>よくあるご質問</h2>
         </div>
         <div class="faq-list reveal">
-          <details><summary><span>Q.</span>ワインに詳しくなくても大丈夫ですか？</summary><div class="faq-answer"><span>A.</span><p>もちろんです。<br>お好みやその日の気分を伺いながら、<br>ソムリエがワインをご提案いたします。</p></div></details>
-          <details><summary><span>Q.</span>一人でも利用できますか？</summary><div class="faq-answer"><span>A.</span><p>はい。<br>お一人でゆっくりとワインを楽しまれるお客様も歓迎しております。</p></div></details>
-          <details><summary><span>Q.</span>グラスワインだけでも利用できますか？</summary><div class="faq-answer"><span>A.</span><p>はい。<br>グラスワイン一杯からお楽しみいただけます。</p></div></details>
-          <details><summary><span>Q.</span>予約は必要ですか？</summary><div class="faq-answer"><span>A.</span><p>お席に限りがございますので、<br>事前のご予約をおすすめしております。</p></div></details>
-          <details><summary><span>Q.</span>香水について決まりはありますか？</summary><div class="faq-answer"><span>A.</span><p>ワインの繊細な香りをお楽しみいただくため、<br>香水や香りの強い整髪料などのご使用はお控えください。</p><p>詳しいご案内については<br><a href="#guest-information">Information</a>をご確認ください。</p></div></details>
+          <details><summary><span>Q.</span>ワインに詳しくなくても大丈夫ですか？</summary><div class="faq-answer"><span>A.</span><p>もちろんです。お好みを伺い、ソムリエがご提案します。</p></div></details>
+          <details><summary><span>Q.</span>一人でも利用できますか？</summary><div class="faq-answer"><span>A.</span><p>はい。お一人でのご来店も歓迎しております。</p></div></details>
+          <details><summary><span>Q.</span>グラスワインだけでも利用できますか？</summary><div class="faq-answer"><span>A.</span><p>はい。グラスワイン一杯からお楽しみいただけます。</p></div></details>
+          <details><summary><span>Q.</span>予約は必要ですか？</summary><div class="faq-answer"><span>A.</span><p>お席に限りがございますので、事前のご予約をおすすめしております。</p></div></details>
+          <details><summary><span>Q.</span>香水について決まりはありますか？</summary><div class="faq-answer"><span>A.</span><p>香水や香りの強い整髪料はお控えください。詳しくは<a href="#guest-information">ご利用案内</a>をご覧ください。</p></div></details>
         </div>
       </div>
     </section>
 
     <section class="section guest-information" id="guest-information" aria-labelledby="guest-information-title">
-      <div class="section-label reveal"><span>07</span> Information</div>
+      <div class="section-label reveal"><span>08</span> Information</div>
       <div class="guest-information__heading reveal">
         <p class="eyebrow">For a quiet evening</p>
         <h2 id="guest-information-title">ご来店のお客様へ</h2>
-        <p class="guest-information__lead">Tsuki-akariでは、ワインとともに穏やかな時間をお過ごしいただける空間を大切にしております。<br>皆さまに心地よくお楽しみいただくため、以下についてご理解とご協力をお願いいたします。</p>
+        <p class="guest-information__lead">ワインの香りと心地よい空間を皆さまで楽しむため、以下のご協力をお願いいたします。</p>
       </div>
       <div class="etiquette-list">
         <article class="etiquette-item reveal">
@@ -225,16 +196,12 @@
           <div><h3>店内での過ごし方について</h3><p>大きな声での会話など、他のお客様のご迷惑となる行為はお控えください。</p></div>
         </article>
       </div>
-      <div class="guest-information__closing reveal">
-        <span aria-hidden="true"></span>
-        <p>小さなワインバーだからこそ、一杯のワインと、その場に流れる時間を大切にしたいと考えております。<br>皆さまのご理解とご協力をお願い申し上げます。</p>
-      </div>
     </section>
 
     <section class="section information" id="information" aria-labelledby="information-title">
-      <div class="section-label reveal"><span>08</span> Information</div>
+      <div class="section-label reveal"><span>09</span> Access</div>
       <div class="info-layout">
-        <div class="reveal"><p class="eyebrow">Visit us</p><h2 id="information-title">店舗情報</h2><p class="info-note">ご来店前に最新情報をご確認ください。</p></div>
+        <div class="reveal"><p class="eyebrow">Visit us</p><h2 id="information-title">店舗情報・アクセス</h2><p class="info-note">ご来店前に最新情報をご確認ください。</p></div>
         <dl class="info-list reveal">
           <div><dt>Address</dt><dd>〒113-0034<br>東京都文京区湯島2-31-17 DaikatsuBLDG 102</dd></div>
           <div><dt>Hours</dt><dd>18:00–23:30<br>Food L.O. 22:30 / Drink L.O. 23:00</dd></div>
@@ -246,14 +213,14 @@
           <div><dt>Smoking</dt><dd>全席禁煙</dd></div>
         </dl>
       </div>
-      <figure class="entrance-image reveal"><img src="assets/外観.jpeg" alt="Winebar Tsuki-akariの落ち着いた店舗入口" loading="lazy"><figcaption>Entrance — Yushima, Tokyo</figcaption></figure>
+      <figure class="entrance-image reveal"><img src="assets/entrance-1440.webp" srcset="assets/entrance-1440.webp 1440w, assets/entrance-2400.webp 2400w" sizes="(max-width: 440px) 161.25vw, (max-width: 520px) 712.5px, (max-width: 738px) 157.5vw, 1162.5px" alt="Winebar Tsuki-akariの落ち着いた店舗入口" loading="lazy"><figcaption>Entrance — Yushima, Tokyo</figcaption></figure>
     </section>
 
     <section class="reservation" id="reservation" aria-labelledby="reservation-title">
       <div class="reservation-inner reveal">
         <p class="eyebrow">Reservation / Contact</p>
         <h2 id="reservation-title">静かな夜を、<br>Tsuki-akariで。</h2>
-        <p>ご予約・お問い合わせは、準備が整い次第こちらから承ります。</p>
+        <p>ただいまご予約を承っております。<br>一休.com、またはお電話にてご予約ください。</p>
         <div class="reservation-actions">
           <a class="button" href="https://restaurant.ikyu.com/154130/" target="_blank" rel="noopener noreferrer">一休.comで予約</a>
           <a class="button button--ghost" href="https://tabelog.com/tokyo/A1310/A131004/13314758/" target="_blank" rel="noopener noreferrer">食べログを見る</a>
