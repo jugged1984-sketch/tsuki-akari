@@ -89,7 +89,7 @@
 - 予約：[一休.com](https://restaurant.ikyu.com/154130/)
 - 店舗掲載：[食べログ](https://tabelog.com/tokyo/A1310/A131004/13314758/)
 - SNS：[Instagram](https://www.instagram.com/tsukiakari.winebar/)
-- 人物紹介：[Sho Yamazaki Official Website](https://jugged1984-sketch.github.io/sommelier-yamazaki/)
+- 人物紹介：[Sho Yamazaki Official Website](https://sho-yamazaki.jp/)
 - フォント：Google FontsのCormorant Garamond、Noto Serif JPをCSSから読み込み。
 - Instagram埋め込み：`https://elfsightcdn.com/platform.js`。投稿画像の配信は外部サービス側で管理。
 
