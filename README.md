@@ -31,7 +31,7 @@
 
 ### トップページ `/`
 
-次の11セクションで構成しています。
+次の10セクションで構成しています。
 
 1. ファーストビュー（`#top`）
 2. Concept／店のコンセプト（`#concept`）
@@ -39,11 +39,10 @@
 4. First Visit／初めての方への案内（`#first-visit`）
 5. Sommelier／山崎翔の紹介（`#sommelier`）
 6. Gallery（`#gallery`）
-7. Instagram（`#instagram`）
-8. FAQ（`#faq`）
-9. Information／ご利用案内（`#guest-information`）
-10. Access／店舗情報・アクセス（`#information`）
-11. 予約・お問い合わせ（`#reservation`）
+7. FAQ（`#faq`）
+8. Information／ご利用案内（`#guest-information`）
+9. Access／店舗情報・アクセス（`#information`）
+10. 予約・お問い合わせ（`#reservation`）
 
 旧Our Philosophy・ExperienceはConceptとFirst Visitへ、旧Wine SelectionはWine & Foodへ統合済みです。Wine & Foodには英語アクセント「Selection / By the Glass / Pairing」、チャージ・グラスワインの価格、詳細メニューへのリンクがあります。
 
@@ -61,7 +60,7 @@
 - FAQはHTML標準の`details` / `summary`による開閉式。
 - 両ページに一休.comへ移動する予約追従ボタンを設置。
 - トップの予約欄には一休.com、食べログ、電話のリンクを設置。サイト内で予約を処理するフォームやバックエンドはありません。
-- InstagramはElfsightの外部ウィジェットで表示。
+- フッターにInstagram公式アカウントへのリンクを設置。投稿フィードの埋め込みは行いません。
 
 ## 画像の使い分け
 
@@ -91,11 +90,9 @@
 - SNS：[Instagram](https://www.instagram.com/tsukiakari.winebar/)
 - 人物紹介：[Sho Yamazaki Official Website](https://sho-yamazaki.jp/)
 - フォント：Google FontsのCormorant Garamond、Noto Serif JPをCSSから読み込み。
-- Instagram埋め込み：`https://elfsightcdn.com/platform.js`。投稿画像の配信は外部サービス側で管理。
-
 両ページにtitle・description・canonicalを設定し、トップにはOGP・Twitterカード情報を設定しています。canonicalの指定先は`https://tsuki-akari.tokyo/`と`https://tsuki-akari.tokyo/menu/`です。`CNAME`も`tsuki-akari.tokyo`を指定しています。
 
-外部フォントやInstagramの表示にはインターネット接続が必要です。
+外部フォントの読み込みにはインターネット接続が必要です。
 
 ## ローカルで確認する
 
@@ -138,6 +135,6 @@ Windowsでは、Pythonのインストール方法に応じて`py -m http.server 
 - 店舗情報・予約リンク・外部リンクは実際の運用内容と照合する。
 - CSSを更新した場合は、両HTMLのCSS参照にある`?v=`も必要に応じて更新する。
 - 画像の`src`・`srcset`、CSS背景画像、SNS共有画像の参照先を確認する。
-- PC・スマホで写真の見え方、ナビ、FAQ、予約追従ボタン、Instagramを確認する。
+- PC・スマホで写真の見え方、ナビ、FAQ、予約追従ボタン、フッターのInstagram公式アカウントリンクを確認する。
 
 画像参照や内部リンクの静的チェックは実施済みですが、画像最適化後の実ブラウザーでの表示・通信確認は未実施です。
