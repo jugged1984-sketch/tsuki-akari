@@ -198,6 +198,8 @@ img{max-width:100%;height:auto}
 .access-routes a{color:var(--paper);text-decoration:underline;text-underline-offset:.2em}
 .access-routes a:hover,.access-routes a:focus-visible{color:var(--gold)}
 
+.sommelier-note-link{text-decoration:underline;text-underline-offset:.2em}
+
 /* Menu page */
 .global-nav .is-current{color:var(--gold)}
 .menu-hero{min-height:clamp(420px,60svh,620px);display:grid;place-items:center;padding:130px 24px 80px;text-align:center;background:radial-gradient(circle at 50% 30%,#25241e 0,transparent 35%),#10110f;border-bottom:1px solid var(--line)}
